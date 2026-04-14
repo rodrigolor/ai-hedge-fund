@@ -104,9 +104,8 @@ OPENAI_API_KEY=your-openai-api-key
 # For running LLMs hosted by groq (deepseek, llama3, etc.)
 GROQ_API_KEY=your-groq-api-key
 
-# For getting financial data from Financial Modeling Prep
-FINANCIAL_MODELING_PREP_API_KEY=your-fmp-api-key
-
-# For getting financial data from Polygon.io
-POLYGON_API_KEY=your-polygon-api-key
+# For getting financial data (required for stock price and fundamentals)
+FINANCIAL_DATASETS_API_KEY=your-financial-datasets-api-key
 ```
+
+> **Note (personal):** I've found that setting up `FINANCIAL_DATASETS_API_KEY` first is the most important step — without it, most agents will fail to fetch data even if your LLM keys are correct.
